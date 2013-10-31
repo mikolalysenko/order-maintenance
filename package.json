@@ -1,0 +1,40 @@
+{
+  "name": "order-maintenance",
+  "version": "0.0.0",
+  "description": "Ordered list maintenance data structure",
+  "main": "ordered-list.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "tape": "~2.1.0",
+    "tap": "~0.4.4"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mikolalysenko/order-maintenance.git"
+  },
+  "keywords": [
+    "ordered",
+    "list",
+    "maintenance",
+    "insert",
+    "delete",
+    "remove",
+    "split",
+    "compare",
+    "rank",
+    "total",
+    "order"
+  ],
+  "author": "Mikola Lysenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mikolalysenko/order-maintenance/issues"
+  }
+}
