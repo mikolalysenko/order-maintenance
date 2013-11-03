@@ -8,7 +8,7 @@ function testList(createList, t) {
   t.ok(a.compare(b) < 0)
   t.ok(b.compare(a) > 0)
   t.ok(a.compare(a) === 0)
-
+  
   var l = createList()
   for(var i=0; i<1000; ++i) {
     l.insert()
