@@ -1,6 +1,6 @@
 {
   "name": "order-maintenance",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Ordered list maintenance data structure",
   "main": "ordered-list.js",
   "directories": {
