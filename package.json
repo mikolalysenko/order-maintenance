@@ -1,6 +1,6 @@
 {
   "name": "order-maintenance",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Ordered list maintenance data structure",
   "main": "ordered-list.js",
   "directories": {
@@ -9,11 +9,10 @@
   "dependencies": {
   },
   "devDependencies": {
-    "tape": "~2.1.0",
-    "tap": "~0.4.4"
+    "tape": "^2.1.0"
   },
   "scripts": {
-    "test": "tap test/*.js"
+    "test": "tape test/*.js"
   },
   "repository": {
     "type": "git",
