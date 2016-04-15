@@ -1,1 +1,1 @@
-module.exports = require("./lib/lower-list")
+module.exports = require('./lib/lower-list')

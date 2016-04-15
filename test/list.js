@@ -1,25 +1,26 @@
-"use strict"
+'use strict'
 
 module.exports = testList
 
-function testList(createList, t) {
+function testList (createList, t) {
+  var i
 
-  //Basic insert and compare
-  var a = createList()  
+  // Basic insert and compare
+  var a = createList()
   var b = a.insert()
   t.equals(a.next, b)
   t.equals(b.prev, a)
   t.ok(a.compare(b) < 0)
   t.ok(b.compare(a) > 0)
   t.ok(a.compare(a) === 0)
-  
-  //More insertions
+
+  // More insertions
   var base = createList()
-  for(var i=0; i<1000; ++i) {
+  for (i = 0; i < 1000; ++i) {
     base.insert()
   }
   var l = base.next
-  while(l) {
+  while (l) {
     t.ok(l.prev.compare(l) < 0)
     t.ok(l.compare(l.prev) > 0)
     t.ok(l.compare(l) === 0)
@@ -28,12 +29,12 @@ function testList(createList, t) {
     l = l.next
   }
 
-  //Try remove
-  for(var i=0; i<500; ++i) {
+  // Try remove
+  for (i = 0; i < 500; ++i) {
     base.next.remove()
   }
   l = base.next
-  while(l) {
+  while (l) {
     t.ok(l.prev.compare(l) < 0)
     t.ok(l.compare(l.prev) > 0)
     t.ok(l.compare(l) === 0)
@@ -42,12 +43,12 @@ function testList(createList, t) {
     l = l.next
   }
 
-  //Try inserting again
-  for(var i=0; i<1000; ++i) {
+  // Try inserting again
+  for (i = 0; i < 1000; ++i) {
     base.insert()
   }
   l = base.next
-  while(l) {
+  while (l) {
     t.ok(l.prev.compare(l) < 0)
     t.ok(l.compare(l.prev) > 0)
     t.ok(l.compare(l) === 0)
